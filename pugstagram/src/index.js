@@ -1,6 +1,6 @@
 import App from './containers/App.svelte'
 
-const app=App({
+const app=new App({
     target:document.querySelector('main')
 });
 
