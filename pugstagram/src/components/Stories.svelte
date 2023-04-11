@@ -1,4 +1,6 @@
 <!-- Stories.svelte -->
+<script>
+</script>
 <style>
     .Stories {
       border: 1px solid rgba(219, 219, 219, 1);
@@ -70,7 +72,7 @@
                 <div class="Stories-item-box">
                     <img src="https://media.licdn.com/dms/image/C4E03AQEct6JS87tjqg/profile-displayphoto-shrink_800_800/0/1654195401033?e=2147483647&v=beta&t=Ol_Vpgnbl1wm3OmZQV6JgBciJb6D9J1VhWQ1p7l5U0o" alt="">
                 </div>
-                <h2>José Guachun<span>5 horas antes</span></h2>
+                <h2>Drekx<span>10 horas antes</span></h2>
             </div>
         </div>
     </div>

@@ -1,8 +1,16 @@
 <script>
+    import { onMount } from "svelte"
     import Header from '../components/Header.svelte'
     import Main from '../components/Main.svelte'
     import Sidebar from '../components/Sidebar.svelte'
     import TimeLine from '../components/TimeLine.svelte'
+
+    let data={};
+    const API= "https://kittygram-api.vercel.app"
+    onMount(async () => {
+        const response = await fetch(API);
+        data = await response.json();
+    });
 </script>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
@@ -23,6 +31,6 @@
 
 </Header>
 <Main>
-    <TimeLine/>
-    <Sidebar/>
+    <TimeLine posts={data.posts}/>
+    <Sidebar {...data.user}/>
 </Main>

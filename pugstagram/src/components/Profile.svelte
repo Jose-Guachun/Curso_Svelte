@@ -1,5 +1,6 @@
 <!-- Profile.svelte -->
-
+<script>
+</script>
 <style>
     .Profile-content {
       display: flex;
