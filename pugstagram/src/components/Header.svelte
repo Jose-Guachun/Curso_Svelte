@@ -1,4 +1,7 @@
 <!-- Header.svelte -->
+<script>
+  import {likeCount} from "../store/store.js"
+</script>
 <style>
     .Header {
       background-color: white;
@@ -67,7 +70,8 @@
             <div class="Header-nav">
                 <ul>
                     <li>
-                        <i class="fa fa-heart"></i>
+                        <i class="fa fa-heart"/>
+                        {$likeCount === 0? '': $likeCount}
                     </li>
                     <li>
                         <i class="fa fa-user-alt"></i>
